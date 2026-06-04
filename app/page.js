@@ -20,7 +20,7 @@ export default function Home() {
       {/* NAVBAR */}
 
       <nav className="navbar">
-        <div src="/logo.png"></div>
+        <div className="logo">ED</div>
 
         <div className="menu">
           <a href="#skills">Skills</a>
