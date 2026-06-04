@@ -1,23 +1,37 @@
+import Image from "next/image";
+import {
+  SiPython,
+  SiMysql,
+  SiGit,
+  SiMicrosoftexcel
+} from "react-icons/si";
+import { FaChartBar } from "react-icons/fa";
+
 export default function Home() {
   return (
-    <>
+    <main>
+
       <nav className="navbar">
-        <div className="logo">ED</div>
+        <div className="logo">
+          <span>ED</span>
+          <h3>EUDY DE OLEO</h3>
+        </div>
 
         <div className="menu">
-          <a href="#home">Inicio</a>
-          <a href="#about">Sobre mí</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#contact">Contacto</a>
+          <a href="#">Inicio</a>
+          <a href="#">Sobre mí</a>
+          <a href="#">Skills</a>
+          <a href="#">Proyectos</a>
+          <a href="#">Dashboard</a>
+          <a href="#">Contacto</a>
         </div>
       </nav>
 
-      <section className="hero" id="home">
+      <section className="hero">
 
-        <div className="hero-left">
+        <div className="hero-text">
 
-          <span className="badge">
+          <span className="subtitle">
             HOLA, SOY
           </span>
 
@@ -31,53 +45,63 @@ export default function Home() {
 
           <p>
             Transformo datos en decisiones estratégicas.
-            Especializado en SQL, Power BI y Python
-            para generar impacto real en los negocios.
+            Especializado en SQL, Power BI y Python para
+            convertir información en resultados reales.
           </p>
 
           <div className="buttons">
-            <a href="#" className="primary">
-              Descargar CV
-            </a>
 
-            <a href="#projects" className="secondary">
+            <button className="btn-primary">
+              Descargar CV
+            </button>
+
+            <button className="btn-secondary">
               Ver Proyectos
-            </a>
+            </button>
+
           </div>
 
-          <div className="tech-stack">
+          <div className="tech-grid">
 
             <div className="tech-card">
-              SQL
+              <SiMysql />
+              <span>SQL</span>
             </div>
 
             <div className="tech-card">
-              Power BI
+              <FaChartBar />
+              <span>Power BI</span>
             </div>
 
             <div className="tech-card">
-              Python
+              <SiPython />
+              <span>Python</span>
             </div>
 
             <div className="tech-card">
-              Excel
+              <SiMicrosoftexcel />
+              <span>Excel</span>
             </div>
 
             <div className="tech-card">
-              Git
+              <SiGit />
+              <span>Git</span>
             </div>
 
           </div>
 
         </div>
 
-        <div className="hero-right">
+        <div className="hero-image-container">
 
           <div className="glow"></div>
 
-          <img
+          <Image
             src="/eudy.png"
-            alt="Eudy"
+            alt="Eudy De Oleo"
+            width={800}
+            height={900}
+            priority
             className="hero-image"
           />
 
@@ -85,29 +109,30 @@ export default function Home() {
 
       </section>
 
-      <section className="services">
+      <section className="features">
 
-        <div className="service-card">
+        <div className="feature">
           <h3>Análisis</h3>
           <p>Basado en datos</p>
         </div>
 
-        <div className="service-card">
+        <div className="feature">
           <h3>Dashboards</h3>
           <p>Visuales e interactivos</p>
         </div>
 
-        <div className="service-card">
+        <div className="feature">
           <h3>Automatización</h3>
           <p>Procesos eficientes</p>
         </div>
 
-        <div className="service-card">
+        <div className="feature">
           <h3>Insights</h3>
           <p>Decisiones inteligentes</p>
         </div>
 
       </section>
-    </>
+
+    </main>
   );
 }
