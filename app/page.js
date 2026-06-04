@@ -5,102 +5,84 @@ import {
   SiGit,
   SiMicrosoftexcel
 } from "react-icons/si";
-import { FaChartBar } from "react-icons/fa";
+import { FaChartBar, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main>
 
       <nav className="navbar">
-        <div className="logo">
-          <span>ED</span>
-          <h3>EUDY DE OLEO</h3>
-        </div>
+        <div className="logo">EUDY</div>
 
         <div className="menu">
-          <a href="#">Inicio</a>
-          <a href="#">Sobre mí</a>
-          <a href="#">Skills</a>
-          <a href="#">Proyectos</a>
-          <a href="#">Dashboard</a>
-          <a href="#">Contacto</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#timeline">Ruta</a>
+          <a href="#contact">Contacto</a>
         </div>
       </nav>
 
       <section className="hero">
 
-        <div className="hero-text">
+        <div className="hero-left">
 
-          <span className="subtitle">
-            HOLA, SOY
+          <span className="tag">
+            DATA ANALYTICS
           </span>
 
-          <h1>
-            Eudy De Oleo
-          </h1>
+          <h1>Eudy De Oleo</h1>
 
           <h2>
-            Data Analytics & Data Engineering
+            Data Analyst | Future Data Engineer
           </h2>
 
           <p>
-            Transformo datos en decisiones estratégicas.
-            Especializado en SQL, Power BI y Python para
-            convertir información en resultados reales.
+            Transformando datos en decisiones
+            inteligentes utilizando SQL,
+            Power BI y Python.
           </p>
 
           <div className="buttons">
 
-            <button className="btn-primary">
-              Descargar CV
-            </button>
-
-            <button className="btn-secondary">
+            <a href="#projects" className="btn-primary">
               Ver Proyectos
-            </button>
+            </a>
+
+            <a href="#" className="btn-secondary">
+              Descargar CV
+            </a>
 
           </div>
 
-          <div className="tech-grid">
+          <div className="socials">
 
-            <div className="tech-card">
-              <SiMysql />
-              <span>SQL</span>
-            </div>
+            <a
+              href="https://github.com/eudydeoleo"
+              target="_blank"
+            >
+              <FaGithub />
+            </a>
 
-            <div className="tech-card">
-              <FaChartBar />
-              <span>Power BI</span>
-            </div>
-
-            <div className="tech-card">
-              <SiPython />
-              <span>Python</span>
-            </div>
-
-            <div className="tech-card">
-              <SiMicrosoftexcel />
-              <span>Excel</span>
-            </div>
-
-            <div className="tech-card">
-              <SiGit />
-              <span>Git</span>
-            </div>
+            <a
+              href="https://www.instagram.com/eudydo/"
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
 
           </div>
 
         </div>
 
-        <div className="hero-image-container">
+        <div className="hero-right">
 
           <div className="glow"></div>
 
           <Image
             src="/eudy.png"
-            alt="Eudy De Oleo"
-            width={800}
-            height={900}
+            alt="Eudy"
+            width={700}
+            height={800}
             priority
             className="hero-image"
           />
@@ -109,29 +91,115 @@ export default function Home() {
 
       </section>
 
-      <section className="features">
+      <section className="stats">
 
-        <div className="feature">
-          <h3>Análisis</h3>
-          <p>Basado en datos</p>
+        <div className="stat">
+          <h3>10+</h3>
+          <p>Proyectos</p>
         </div>
 
-        <div className="feature">
-          <h3>Dashboards</h3>
-          <p>Visuales e interactivos</p>
+        <div className="stat">
+          <h3>100K+</h3>
+          <p>Registros</p>
         </div>
 
-        <div className="feature">
-          <h3>Automatización</h3>
-          <p>Procesos eficientes</p>
-        </div>
-
-        <div className="feature">
-          <h3>Insights</h3>
-          <p>Decisiones inteligentes</p>
+        <div className="stat">
+          <h3>5</h3>
+          <p>Tecnologías</p>
         </div>
 
       </section>
+
+      <section id="skills" className="skills">
+
+        <h2>Tecnologías</h2>
+
+        <div className="tech-grid">
+
+          <div className="tech-card">
+            <SiMysql />
+            <span>SQL</span>
+          </div>
+
+          <div className="tech-card">
+            <FaChartBar />
+            <span>Power BI</span>
+          </div>
+
+          <div className="tech-card">
+            <SiPython />
+            <span>Python</span>
+          </div>
+
+          <div className="tech-card">
+            <SiMicrosoftexcel />
+            <span>Excel</span>
+          </div>
+
+          <div className="tech-card">
+            <SiGit />
+            <span>Git</span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="projects" className="projects">
+
+        <h2>Proyectos Destacados</h2>
+
+        <div className="project-grid">
+
+          <div className="project-card">
+            <h3>Dashboard Ejecutivo</h3>
+            <p>Power BI + SQL</p>
+          </div>
+
+          <div className="project-card">
+            <h3>Análisis de Ventas</h3>
+            <p>Python + Pandas</p>
+          </div>
+
+          <div className="project-card">
+            <h3>Pipeline de Datos</h3>
+            <p>Python + SQL</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="timeline" className="timeline">
+
+        <h2>Ruta Profesional</h2>
+
+        <div className="timeline-item">
+          <strong>2025</strong>
+          <p>Excel & SQL</p>
+        </div>
+
+        <div className="timeline-item">
+          <strong>2026</strong>
+          <p>Power BI & Python</p>
+        </div>
+
+        <div className="timeline-item">
+          <strong>Meta</strong>
+          <p>Data Analyst</p>
+        </div>
+
+        <div className="timeline-item">
+          <strong>Futuro</strong>
+          <p>Data Engineer</p>
+        </div>
+
+      </section>
+
+      <footer id="contact">
+        <p>eudydeoleo@icloud.com</p>
+        <p>© 2026 Eudy De Oleo</p>
+      </footer>
 
     </main>
   );
