@@ -1,9 +1,9 @@
 import Image from "next/image";
+
 import {
   SiPython,
   SiMysql,
   SiGit,
-  SiMicrosoftexcel,
 } from "react-icons/si";
 
 import {
@@ -11,6 +11,7 @@ import {
   FaGithub,
   FaInstagram,
   FaArrowRight,
+  FaFileExcel
 } from "react-icons/fa";
 
 export default function Home() {
@@ -82,7 +83,7 @@ export default function Home() {
           <div className="glow"></div>
 
           <Image
-            src="/eudy.png"
+            src="public/eudy.png"
             alt="Eudy De Oleo"
             width={800}
             height={900}
@@ -133,10 +134,10 @@ export default function Home() {
           </div>
 
           <div className="tech-card">
-            <SiMicrosoftexcel />
-            <span>Excel</span>
+            <FaFileExcel />
+           <span>Excel</span>
           </div>
-
+          
           <div className="tech-card">
             <SiGit />
             <span>Git</span>
