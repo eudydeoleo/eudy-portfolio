@@ -3,16 +3,23 @@ import {
   SiPython,
   SiMysql,
   SiGit,
-  SiMicrosoftexcel
+  SiMicrosoftexcel,
 } from "react-icons/si";
-import { FaChartBar, FaGithub, FaInstagram } from "react-icons/fa";
+
+import {
+  FaChartBar,
+  FaGithub,
+  FaInstagram,
+  FaArrowRight,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
     <main>
+      {/* NAVBAR */}
 
       <nav className="navbar">
-        <div className="logo">EUDY</div>
+        <div className="logo">ED</div>
 
         <div className="menu">
           <a href="#skills">Skills</a>
@@ -22,28 +29,27 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* HERO */}
+
       <section className="hero">
-
         <div className="hero-left">
+          <span className="tag">DATA ANALYTICS</span>
 
-          <span className="tag">
-            DATA ANALYTICS
-          </span>
+          <h1>
+            Eudy
+            <br />
+            De Oleo
+          </h1>
 
-          <h1>Eudy De Oleo</h1>
-
-          <h2>
-            Data Analyst | Future Data Engineer
-          </h2>
+          <h2>Data Analyst | Future Data Engineer</h2>
 
           <p>
-            Transformando datos en decisiones
-            inteligentes utilizando SQL,
-            Power BI y Python.
+            Transformo datos en decisiones estratégicas utilizando SQL,
+            Power BI y Python para crear soluciones que generen impacto
+            real en los negocios.
           </p>
 
           <div className="buttons">
-
             <a href="#projects" className="btn-primary">
               Ver Proyectos
             </a>
@@ -51,14 +57,13 @@ export default function Home() {
             <a href="#" className="btn-secondary">
               Descargar CV
             </a>
-
           </div>
 
           <div className="socials">
-
             <a
               href="https://github.com/eudydeoleo"
               target="_blank"
+              rel="noreferrer"
             >
               <FaGithub />
             </a>
@@ -66,56 +71,52 @@ export default function Home() {
             <a
               href="https://www.instagram.com/eudydo/"
               target="_blank"
+              rel="noreferrer"
             >
               <FaInstagram />
             </a>
-
           </div>
-
         </div>
 
         <div className="hero-right">
-
           <div className="glow"></div>
 
           <Image
             src="/eudy.png"
-            alt="Eudy"
-            width={700}
-            height={800}
+            alt="Eudy De Oleo"
+            width={800}
+            height={900}
             priority
             className="hero-image"
           />
-
         </div>
-
       </section>
 
-      <section className="stats">
+      {/* STATS */}
 
+      <section className="stats">
         <div className="stat">
           <h3>10+</h3>
-          <p>Proyectos</p>
+          <p>Proyectos Analíticos</p>
         </div>
 
         <div className="stat">
           <h3>100K+</h3>
-          <p>Registros</p>
+          <p>Registros Analizados</p>
         </div>
 
         <div className="stat">
-          <h3>5</h3>
-          <p>Tecnologías</p>
+          <h3>2026</h3>
+          <p>Objetivo Data Engineer</p>
         </div>
-
       </section>
 
-      <section id="skills" className="skills">
+      {/* SKILLS */}
 
+      <section id="skills" className="skills">
         <h2>Tecnologías</h2>
 
         <div className="tech-grid">
-
           <div className="tech-card">
             <SiMysql />
             <span>SQL</span>
@@ -140,38 +141,59 @@ export default function Home() {
             <SiGit />
             <span>Git</span>
           </div>
-
         </div>
-
       </section>
 
-      <section id="projects" className="projects">
+      {/* PROYECTOS */}
 
+      <section id="projects" className="projects">
         <h2>Proyectos Destacados</h2>
 
         <div className="project-grid">
-
           <div className="project-card">
             <h3>Dashboard Ejecutivo</h3>
-            <p>Power BI + SQL</p>
+
+            <p>
+              Visualización estratégica para seguimiento de KPIs,
+              rendimiento y toma de decisiones.
+            </p>
+
+            <br />
+
+            <FaArrowRight />
           </div>
 
           <div className="project-card">
             <h3>Análisis de Ventas</h3>
-            <p>Python + Pandas</p>
+
+            <p>
+              Limpieza, transformación y análisis de datos con Python,
+              Pandas y Power BI.
+            </p>
+
+            <br />
+
+            <FaArrowRight />
           </div>
 
           <div className="project-card">
             <h3>Pipeline de Datos</h3>
-            <p>Python + SQL</p>
+
+            <p>
+              Automatización de flujos de datos utilizando SQL y Python
+              para procesos repetitivos.
+            </p>
+
+            <br />
+
+            <FaArrowRight />
           </div>
-
         </div>
-
       </section>
 
-      <section id="timeline" className="timeline">
+      {/* TIMELINE */}
 
+      <section id="timeline" className="timeline">
         <h2>Ruta Profesional</h2>
 
         <div className="timeline-item">
@@ -185,22 +207,49 @@ export default function Home() {
         </div>
 
         <div className="timeline-item">
-          <strong>Meta</strong>
+          <strong>Próximo Paso</strong>
           <p>Data Analyst</p>
         </div>
 
         <div className="timeline-item">
-          <strong>Futuro</strong>
+          <strong>Meta Final</strong>
           <p>Data Engineer</p>
         </div>
-
       </section>
 
+      {/* CONTACTO */}
+
       <footer id="contact">
+        <h3>Eudy De Oleo</h3>
+
+        <br />
+
         <p>eudydeoleo@icloud.com</p>
+
+        <br />
+
+        <div className="socials">
+          <a
+            href="https://github.com/eudydeoleo"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://www.instagram.com/eudydo/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </div>
+
+        <br />
+
         <p>© 2026 Eudy De Oleo</p>
       </footer>
-
     </main>
   );
 }
