@@ -83,7 +83,7 @@ export default function Home() {
           <div className="glow"></div>
 
           <Image
-            src="public/eudy.png"
+            src="/eudy.png"
             alt="Eudy De Oleo"
             width={800}
             height={900}
@@ -137,7 +137,7 @@ export default function Home() {
             <FaFileExcel />
            <span>Excel</span>
           </div>
-          
+
           <div className="tech-card">
             <SiGit />
             <span>Git</span>
