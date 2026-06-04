@@ -1,7 +1,9 @@
+"use client";
+
 export default function Home() {
   return (
     <>
-      <nav className="navbar">
+      <nav className="nav">
         <div className="logo">Eudy De Oleo</div>
 
         <div className="menu">
@@ -13,35 +15,46 @@ export default function Home() {
       </nav>
 
       <section className="hero">
-        <h1>Eudy De Oleo</h1>
+        <div className="hero-content">
+          <div className="hero-text">
+            <span className="tag">DATA ANALYTICS & DATA ENGINEERING</span>
 
-        <h2>
-          Data Analytics & Data Engineering Student
-        </h2>
+            <h1>
+              Transformando datos en decisiones inteligentes.
+            </h1>
 
-        <p>
-          Transformando datos en información útil para la toma de decisiones.
-        </p>
+            <p>
+              Especializado en SQL, Power BI y Python para crear
+              dashboards, automatizaciones y soluciones basadas en datos.
+            </p>
 
-        <div className="tech">
-          Excel • SQL • Power BI • Python
+            <div className="buttons">
+              <a href="#projects" className="btn-primary">
+                Ver proyectos
+              </a>
+
+              <a href="#contact" className="btn-secondary">
+                Contactarme
+              </a>
+            </div>
+          </div>
+
+          <div className="hero-image">
+            <img
+              src="/eudy.jpg"
+              alt="Eudy De Oleo"
+            />
+          </div>
         </div>
-
-        <a href="#projects" className="button">
-          Ver Proyectos
-        </a>
       </section>
 
       <section id="about" className="section">
         <h2>Sobre mí</h2>
 
         <p>
-          Soy estudiante de Ciencia de Datos con enfoque en
-          Análisis de Datos e Ingeniería de Datos.
-
-          Mi objetivo es desarrollar soluciones basadas en datos
-          utilizando Excel, SQL, Power BI y Python para ayudar
-          a las organizaciones a tomar mejores decisiones.
+          Soy estudiante de Ciencia de Datos enfocado en Data Analytics
+          y Data Engineering. Mi objetivo es utilizar los datos para
+          generar información valiosa y apoyar la toma de decisiones.
         </p>
       </section>
 
@@ -62,66 +75,32 @@ export default function Home() {
         <h2>Proyectos</h2>
 
         <div className="grid">
-
           <div className="card">
             <h3>Dashboard de Ventas</h3>
-            <p>
-              Análisis comercial con KPIs y visualización ejecutiva.
-            </p>
+            <p>Análisis comercial y KPIs ejecutivos.</p>
           </div>
 
           <div className="card">
             <h3>Análisis de Clientes</h3>
-            <p>
-              Segmentación y comportamiento de clientes.
-            </p>
+            <p>Segmentación y comportamiento de clientes.</p>
           </div>
 
           <div className="card">
             <h3>Control de Inventarios</h3>
-            <p>
-              Seguimiento y optimización de inventario.
-            </p>
+            <p>Optimización y seguimiento de inventarios.</p>
           </div>
-
-        </div>
-      </section>
-
-      <section className="section">
-        <h2>Mi Ruta Profesional</h2>
-
-        <div className="timeline">
-
-          <div className="step">
-            <strong>2025-2026</strong>
-            <p>Excel, SQL, Power BI y Python</p>
-          </div>
-
-          <div className="step">
-            <strong>Próximo objetivo</strong>
-            <p>Data Analyst</p>
-          </div>
-
-          <div className="step">
-            <strong>Futuro</strong>
-            <p>Data Engineer</p>
-          </div>
-
         </div>
       </section>
 
       <section id="contact" className="section">
         <h2>Contacto</h2>
 
-        <p>Email: contacto@eudydeoleo.com</p>
-        <p>LinkedIn: linkedin.com/in/eudydeoleo</p>
-        <p>GitHub: github.com/eudydeoleo</p>
+        <p>📧 eudydeoleo@icloud.com</p>
+        <p>🌐 eudydeoleo.com</p>
       </section>
 
       <footer>
-        <p>
-          © 2026 Eudy De Oleo
-        </p>
+        © 2026 Eudy De Oleo
       </footer>
     </>
   );
