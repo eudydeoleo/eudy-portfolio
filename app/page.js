@@ -1,17 +1,21 @@
 import Image from "next/image";
 
 import {
+  SiLinux,
   SiPython,
-  SiMysql,
   SiGit,
+  SiWireshark,
 } from "react-icons/si";
 
 import {
-  FaChartBar,
   FaGithub,
   FaInstagram,
+  FaShieldAlt,
+  FaNetworkWired,
+  FaBug,
+  FaCloud,
   FaArrowRight,
-  FaFileExcel
+  FaLock,
 } from "react-icons/fa";
 
 export default function Home() {
@@ -34,7 +38,8 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-left">
-          <span className="tag">DATA ANALYTICS</span>
+
+          <span className="tag">CYBERSECURITY</span>
 
           <h1>
             Eudy
@@ -42,15 +47,18 @@ export default function Home() {
             De Oleo
           </h1>
 
-          <h2>Data Analyst | Future Data Engineer</h2>
+          <h2>
+            Cybersecurity | Security Analyst
+          </h2>
 
           <p>
-            Transformo datos en decisiones estratégicas utilizando SQL,
-            Power BI y Python para crear soluciones que generen impacto
-            real en los negocios.
+            Me estoy especializando en ciberseguridad, con enfoque en
+            seguridad de redes, evaluación de vulnerabilidades, seguridad
+            operacional y protección de infraestructuras tecnológicas.
           </p>
 
           <div className="buttons">
+
             <a href="#projects" className="btn-primary">
               Ver Proyectos
             </a>
@@ -58,13 +66,16 @@ export default function Home() {
             <a href="#" className="btn-secondary">
               Descargar CV
             </a>
+
           </div>
 
           <div className="socials">
+
             <a
               href="https://github.com/eudydeoleo"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub"
             >
               <FaGithub />
             </a>
@@ -73,59 +84,87 @@ export default function Home() {
               href="https://www.instagram.com/eudydo/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Instagram"
             >
               <FaInstagram />
             </a>
+
           </div>
+
         </div>
 
         <div className="hero-right">
+
           <div className="glow"></div>
 
           <Image
             src="/eudy.png"
-            alt="Eudy De Oleo"
+            alt="Eudy De Oleo - Cybersecurity"
             width={800}
             height={900}
             priority
             className="hero-image"
           />
+
         </div>
       </section>
 
-      {/* STATS */}
+
+      {/* SPECIALIZATION */}
 
       <section className="stats">
+
         <div className="stat">
-          <h3>10+</h3>
-          <p>Proyectos Analíticos</p>
+          <FaShieldAlt />
+
+          <h3>Security</h3>
+
+          <p>
+            Protección de infraestructuras y sistemas
+          </p>
         </div>
 
         <div className="stat">
-          <h3>100K+</h3>
-          <p>Registros Analizados</p>
+          <FaNetworkWired />
+
+          <h3>Networks</h3>
+
+          <p>
+            Seguridad y análisis de redes
+          </p>
         </div>
 
         <div className="stat">
-          <h3>2026</h3>
-          <p>Objetivo Data Engineer</p>
+          <FaBug />
+
+          <h3>Vulnerability</h3>
+
+          <p>
+            Identificación y evaluación de vulnerabilidades
+          </p>
         </div>
+
       </section>
+
 
       {/* SKILLS */}
 
       <section id="skills" className="skills">
-        <h2>Tecnologías</h2>
+
+        <h2>
+          Tecnologías & Seguridad
+        </h2>
 
         <div className="tech-grid">
+
           <div className="tech-card">
-            <SiMysql />
-            <span>SQL</span>
+            <SiLinux />
+            <span>Linux</span>
           </div>
 
           <div className="tech-card">
-            <FaChartBar />
-            <span>Power BI</span>
+            <FaNetworkWired />
+            <span>Networking</span>
           </div>
 
           <div className="tech-card">
@@ -134,106 +173,226 @@ export default function Home() {
           </div>
 
           <div className="tech-card">
-            <FaFileExcel />
-           <span>Excel</span>
+            <SiWireshark />
+            <span>Wireshark</span>
           </div>
 
           <div className="tech-card">
             <SiGit />
             <span>Git</span>
           </div>
+
+          <div className="tech-card">
+            <FaShieldAlt />
+            <span>Cybersecurity</span>
+          </div>
+
+          <div className="tech-card">
+            <FaLock />
+            <span>Security Operations</span>
+          </div>
+
+          <div className="tech-card">
+            <FaCloud />
+            <span>Cloud Security</span>
+          </div>
+
         </div>
+
       </section>
+
 
       {/* PROYECTOS */}
 
       <section id="projects" className="projects">
-        <h2>Proyectos Destacados</h2>
+
+        <h2>
+          Proyectos de Ciberseguridad
+        </h2>
 
         <div className="project-grid">
+
+          {/* PROJECT 1 */}
+
           <div className="project-card">
-            <h3>Dashboard Ejecutivo</h3>
+
+            <FaShieldAlt />
+
+            <h3>
+              Security Assessment
+            </h3>
 
             <p>
-              Visualización estratégica para seguimiento de KPIs,
-              rendimiento y toma de decisiones.
+              Evaluación de la postura de seguridad de una infraestructura
+              tecnológica para identificar riesgos, debilidades y posibles
+              vectores de ataque.
             </p>
 
             <br />
 
             <FaArrowRight />
+
           </div>
 
+
+          {/* PROJECT 2 */}
+
           <div className="project-card">
-            <h3>Análisis de Ventas</h3>
+
+            <FaBug />
+
+            <h3>
+              Vulnerability Assessment
+            </h3>
 
             <p>
-              Limpieza, transformación y análisis de datos con Python,
-              Pandas y Power BI.
+              Identificación, análisis y documentación de vulnerabilidades
+              utilizando herramientas y metodologías de evaluación de
+              seguridad.
             </p>
 
             <br />
 
             <FaArrowRight />
+
           </div>
 
+
+          {/* PROJECT 3 */}
+
           <div className="project-card">
-            <h3>Pipeline de Datos</h3>
+
+            <FaNetworkWired />
+
+            <h3>
+              Network Security
+            </h3>
 
             <p>
-              Automatización de flujos de datos utilizando SQL y Python
-              para procesos repetitivos.
+              Análisis de tráfico, servicios y configuraciones de red para
+              identificar comportamientos anómalos y mejorar los controles
+              de seguridad.
             </p>
 
             <br />
 
             <FaArrowRight />
+
           </div>
+
+
+          {/* PROJECT 4 */}
+
+          <div className="project-card">
+
+            <FaCloud />
+
+            <h3>
+              Cloud Security
+            </h3>
+
+            <p>
+              Análisis de configuraciones y controles de seguridad en
+              entornos cloud para identificar riesgos y mejorar la
+              protección de los recursos.
+            </p>
+
+            <br />
+
+            <FaArrowRight />
+
+          </div>
+
         </div>
+
       </section>
 
-      {/* TIMELINE */}
+
+      {/* PROFESSIONAL ROADMAP */}
 
       <section id="timeline" className="timeline">
-        <h2>Ruta Profesional</h2>
+
+        <h2>
+          Ruta Profesional
+        </h2>
 
         <div className="timeline-item">
-          <strong>2025</strong>
-          <p>Excel & SQL</p>
+
+          <strong>
+            Fundamentos
+          </strong>
+
+          <p>
+            Linux & Networking
+          </p>
+
         </div>
 
-        <div className="timeline-item">
-          <strong>2026</strong>
-          <p>Power BI & Python</p>
-        </div>
 
         <div className="timeline-item">
-          <strong>Próximo Paso</strong>
-          <p>Data Analyst</p>
+
+          <strong>
+            2026
+          </strong>
+
+          <p>
+            Cybersecurity Fundamentals
+          </p>
+
         </div>
 
+
         <div className="timeline-item">
-          <strong>Meta Final</strong>
-          <p>Data Engineer</p>
+
+          <strong>
+            Próximo Paso
+          </strong>
+
+          <p>
+            Security Analyst
+          </p>
+
         </div>
+
+
+        <div className="timeline-item">
+
+          <strong>
+            Meta Profesional
+          </strong>
+
+          <p>
+            Cybersecurity Consultant
+          </p>
+
+        </div>
+
       </section>
 
-      {/* CONTACTO */}
+
+      {/* CONTACT */}
 
       <footer id="contact">
-        <h3>Eudy De Oleo</h3>
+
+        <h3>
+          Eudy De Oleo
+        </h3>
 
         <br />
 
-        <p>eudydeoleo@icloud.com</p>
+        <p>
+          eudydeoleo@icloud.com
+        </p>
 
         <br />
 
         <div className="socials">
+
           <a
             href="https://github.com/eudydeoleo"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -242,15 +401,21 @@ export default function Home() {
             href="https://www.instagram.com/eudydo/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Instagram"
           >
             <FaInstagram />
           </a>
+
         </div>
 
         <br />
 
-        <p>© 2026 Eudy De Oleo</p>
+        <p>
+          © 2026 Eudy De Oleo
+        </p>
+
       </footer>
+
     </main>
   );
 }
